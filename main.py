@@ -3,22 +3,23 @@ import random
 
 def main():
     total = 0
-    numbers = []
+    numbers = [0] * 5
     """
     ########################################
     Code Your Program here
     ########################################
     """
-    nums = random.randint(0,100)
-
-    while nums < 100:
-        for i in range (5):
-        numbers.append(nums)
+    i = 0
+    
+    while (i < len(numbers)):
+        numbers.append(random.randint(0,100))
+        print((numbers[i]), end = ' ')
+        total += numbers[i]
         i += 1
-        total += nums
-        if nums > 100:
-            break
-        print (total)
+    
+    
+    
+
 
     print(f'The random values are {numbers}')
     print(f'The total is {total}')
