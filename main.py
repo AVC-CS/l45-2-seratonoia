@@ -10,14 +10,15 @@ def main():
     ########################################
     """
     i = 0
+    #syntax for append is listname.append(element)
+    while (total < 100):
+        for i in range (len(numbers)):
+            rndNum = random.randint(0,100)
+            numbers.append(rndNum)
+            total += rndNum
+    print(total)
     
-    while (i < len(numbers)):
-        numbers.append(random.randint(0,100))
-        print((numbers[i]), end = ' ')
-        total += numbers[i]
-        i += 1
-    
-    
+
     
 
 
