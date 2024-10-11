@@ -9,6 +9,13 @@ def main():
     Code Your Program here
     ########################################
     """
+    nums = random.randint(0,100)
+
+    while nums < 100:
+        numbers.append(nums)
+        total += nums
+        if nums > 100:
+            break
 
     print(f'The random values are {numbers}')
     print(f'The total is {total}')
